@@ -31,6 +31,9 @@ assertThat(false); // throws
 assertThat(2 === 2); // does not throw
 assertThat(2 === 1); // throws
 
+assertThat([1, 2, 3, 4, 5].length === 5); // does not throw
+assertThat([1, 2, 3, 4, 5].length === 6); // throws
+
 assertThat(1); // does not throw
 assertThat(0); // throws
 ```
