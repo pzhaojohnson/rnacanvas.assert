@@ -11,6 +11,26 @@ npm install @rnacanvas/assert
 
 # Usage
 
-## The `assertThat()` function
+All exported members of this package
+are accessible as named imports.
+
+```javascript
+// an example import
+import { assertThat } from '@rnacanvas/assert';
+```
+
+## `assertThat()`
 
 Assert that a value is truthy.
+(Note that this function will throw for all falsy values.)
+
+```javascript
+assertThat(true); // does not throw
+assertThat(false); // throws
+
+assertThat(2 === 2); // does not throw
+assertThat(2 === 1); // throws
+
+assertThat(1); // does not throw
+assertThat(0); // throws
+```
