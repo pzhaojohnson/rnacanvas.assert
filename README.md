@@ -8,3 +8,9 @@ With `npm`:
 ```
 npm install @rnacanvas/assert
 ```
+
+# Usage
+
+## The `assertThat()` function
+
+Assert that a value is truthy.
